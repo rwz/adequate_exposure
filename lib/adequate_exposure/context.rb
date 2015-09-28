@@ -20,7 +20,7 @@ module AdequateExposure
     #
     # Returns the attribute's value.
     def get
-      ivar_defined?? ivar_get : set(fetch_value)
+      ivar_defined? ? ivar_get : set(fetch_value)
     end
 
     # Public: Write to an attribute on the context Class.
