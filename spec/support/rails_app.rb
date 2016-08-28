@@ -32,7 +32,7 @@ class BirdsController < ApplicationController
   expose :bird
 
   def show
-    render nothing: true
+    head :ok
   end
 end
 
