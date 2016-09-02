@@ -2,7 +2,7 @@ source "https://rubygems.org"
 
 gemspec
 
-gem "rspec-rails", "~> 3.0"
+gem "appraisal",   "~> 2.1"
+gem "pry",         "~> 0.10"
 gem "rake",        "~> 10.3"
-gem "pry"
-gem "appraisal"
+gem "rspec-rails", "~> 3.4"
