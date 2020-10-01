@@ -9,12 +9,13 @@ module AdequateExposure
     #
     # *args  - An Array of all parameters for the new Exposure. See
     #          #initialize.
+    # **args - A Hash of options. See #initialize.
     # block  - If supplied, the exposed attribute method executes
     #          the Proc when called.
     #
     # Returns a collection of exposed helper methods.
-    def self.expose!(*args, &block)
-      new(*args, &block).expose!
+    def self.expose!(*args, **options, &block)
+      new(*args, **options, &block).expose!
     end
 
     # Public: Initalize an Exposure with a hash of options.

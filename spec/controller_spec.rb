@@ -23,8 +23,8 @@ describe AdequateExposure::Controller do
   before{ allow(controller).to receive(:request){ request } }
 
   %w[expose expose! exposure_config].each do |method_name|
-    define_method method_name do |*args, &block|
-      controller_klass.send method_name, *args, &block
+    define_method method_name do |*args, **keyword_args, &block|
+      controller_klass.public_send method_name, *args, **keyword_args, &block
     end
   end
 

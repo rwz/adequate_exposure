@@ -17,8 +17,8 @@ module AdequateExposure
       #
       # Returns the helper methods that are now defined on the class
       # where this method is included.
-      def expose(*args, &block)
-        Exposure.expose! self, *args, &block
+      def expose(*args, **options, &block)
+        Exposure.expose! self, *args, **options, &block
       end
 
       # Public: Exposes an attribute to a controller Class.
