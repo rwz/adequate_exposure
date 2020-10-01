@@ -22,3 +22,4 @@ tmp
 *.a
 mkmf.log
 gemfiles/*.lock
+.tool-versions
