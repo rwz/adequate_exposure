@@ -1,7 +1,7 @@
 # Adequate Exposure
 [![Gem Version](https://img.shields.io/gem/v/adequate_exposure.svg)](https://rubygems.org/gems/adequate_exposure)
 [![Build Status](https://img.shields.io/travis/rwz/adequate_exposure.svg)](http://travis-ci.org/rwz/adequate_exposure)
-[![Code Climate](https://img.shields.io/codeclimate/github/rwz/adequate_exposure.svg)](https://codeclimate.com/github/rwz/adequate_exposure)
+[![Maintainability](https://api.codeclimate.com/v1/badges/50f8fdfcb0cf57ea3798/maintainability)](https://codeclimate.com/github/rwz/adequate_exposure/maintainability)
 
 Exposing things, adequately.
 
