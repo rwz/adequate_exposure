@@ -36,7 +36,7 @@ instance variable.
 
 ## Example Controller
 
-Here's what a standard Rails 4 CRUD controller using Adequate Exposure might look like:
+Here's what a standard Rails 6 CRUD controller using Adequate Exposure might look like:
 
 ```ruby
 class ThingsController < ApplicationController
@@ -160,7 +160,7 @@ with less code:
 
 ```ruby
 expose :comments, from: :post
-# equivalent to 
+# equivalent to
 expose :comments, ->{ post.comments }
 ```
 
@@ -199,7 +199,7 @@ expose :thing, id: ->{ params[:try_this_id] || params[:or_maybe_that_id] }
 ### `find`
 
 If an ID was provided, Adequate Exposure will try to find the model using it.
-Default behavior could be expressed with this configuration: 
+Default behavior could be expressed with this configuration:
 
 ```ruby
 expose :thing, find: ->(id, scope){ scope.find(id) }
